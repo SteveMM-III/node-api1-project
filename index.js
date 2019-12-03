@@ -78,7 +78,7 @@ server.put( '/users/:id', ( req, res ) => {
     } );
 } );
 
-server.delete( '/users/:id', (req, res) => {
+server.delete( '/users/:id', ( req, res ) => {
   const id = req.params.id;
 
   db.remove( id )
@@ -115,5 +115,5 @@ server.put( '/users/:id', (req, res) => {
 const port = 4000;
 
 server.listen( port, () =>
-  console.log( `\n ** API running on port ${port} **\n` )
+  console.log( `\n ** API running on port ${ port } **\n` )
 );
