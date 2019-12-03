@@ -55,7 +55,7 @@ server.post( '/users', ( req, res ) => {
     } );
 } );
 
-server.put( '/users/:id', ( req, res ) => {
+server.post( '/users/:id', ( req, res ) => {
   const userData = req.body;
   const id = req.params.id;
 
@@ -112,7 +112,7 @@ server.put( '/users/:id', (req, res) => {
     } );
 } );
 
-const port = 4000;
+const port = 4001;
 
 server.listen( port, () =>
   console.log( `\n ** API running on port ${ port } **\n` )
